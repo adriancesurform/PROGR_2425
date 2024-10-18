@@ -15,11 +15,11 @@ public class Juego {
             String armaJugador = "";
 
             // Elección de armas
-            System.out.println("Elige tu arma:");
-            System.out.println("1. Espada (Daño medio, alta precisión)");
-            System.out.println("2. Hacha (Daño alto, baja precisión)");
-            System.out.println("3. Daga (Daño bajo, alta probabilidad de crítico)");
-
+            System.out.println(" ------------------- Elige tu arma --------------------");
+            System.out.println(" | 1. Espada (Daño medio, alta precisión)             |");
+            System.out.println(" | 2. Hacha (Daño alto, baja precisión)               |");
+            System.out.println(" | 3. Daga (Daño bajo, alta probabilidad de crítico)  |");
+            System.out.println(" ------------------------------------------------------");
             int eleccion = sc.nextInt();
 
             switch (eleccion) {
@@ -33,7 +33,10 @@ public class Juego {
                     armaJugador = "Daga";
                     break;
                 default:
-                    System.out.println("Opción no válida, has elegido Espada por defecto.");
+                    System.out.println("-----------------------------------------------------");
+                    System.out.println("| Opción no válida, has elegido Espada por defecto. |");
+                    System.out.println("-----------------------------------------------------");
+
                     armaJugador = "Espada";
                     break;
             }
@@ -42,15 +45,17 @@ public class Juego {
 
             // Bucle de la batalla
             while (vidaJugador > 0 && vidaEnemigo > 0) {
-                System.out.println("\nTu vida: " + vidaJugador + " | Vida del enemigo: " + vidaEnemigo);
-
-                // Turno del jugador
-                System.out.println("Es tu turno. Elige una opción:");
-                System.out.println("1. Atacar");
-                System.out.println("2. Salir del juego");
-                System.out.print("\n");
+                System.out.println("----------------------------------------");
+                System.out.println("| Tu vida: " + vidaJugador + " | Vida del enemigo: " + vidaEnemigo + " |");
                 System.out.println("----------------------------------------");
 
+
+                // Turno del jugador
+                System.out.println("| Es tu turno. Elige una opción:       |");
+                System.out.println("| 1. Atacar                            |");
+                System.out.println("| 2. Salir del juego                   |");
+                System.out.println("----------------------------------------");
+                System.out.print("\n");
 
                 int opcion = sc.nextInt();
 
