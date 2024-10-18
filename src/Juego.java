@@ -34,7 +34,7 @@ public class Juego {
                     break;
                 default:
                     System.out.println("-----------------------------------------------------");
-                    System.out.println("| Opción no válida, has elegido Espada por defecto. |");
+                    System.out.println("| Opción no válida, has elegido la Espada por defecto. |");
                     System.out.println("-----------------------------------------------------");
 
                     armaJugador = "Espada";
